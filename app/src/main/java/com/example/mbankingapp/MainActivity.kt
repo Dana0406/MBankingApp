@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mbankingapp.screens.AccountScreen
 import com.example.mbankingapp.screens.AddTransactionScreen
+import com.example.mbankingapp.screens.AllTransactionsScreen
 import com.example.mbankingapp.ui.theme.MBankingAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +20,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MBankingAppTheme {
-                AddTransactionScreen()
+                AllTransactionsScreen()
             }
         }
     }
