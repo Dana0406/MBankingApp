@@ -52,7 +52,7 @@ fun AccountScreen() {
             modifier = Modifier.padding(top = 12.dp)
         )
         Spacer(modifier = Modifier.height(16.dp))
-        AccountRecyclerView()
+        AccountRecyclerView(true)
         Spacer(modifier = Modifier.height(23.dp))
         Row(
             modifier = Modifier.fillMaxWidth(),

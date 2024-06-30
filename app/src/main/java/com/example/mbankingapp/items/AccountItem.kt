@@ -30,11 +30,14 @@ import com.example.mbankingapp.ui.theme.BackgroundGrey
 import com.example.mbankingapp.ui.theme.TextGrey
 
 @Composable
-fun AccountItem() {
+fun AccountItem(
+    showForwardIcon: Boolean = true
+) {
     Card(
         shape = MaterialTheme.shapes.medium,
         modifier = Modifier
             .fillMaxWidth()
+            .background(Color.Black)
     ) {
         Row(
             modifier = Modifier
@@ -72,14 +75,16 @@ fun AccountItem() {
                 )
             }
 
-            Icon(
-                painter = painterResource(id = R.drawable.forward),
-                contentDescription = null,
-                tint = Color.White,
-                modifier = Modifier
-                    .padding(start = 8.dp)
-                    .align(Alignment.CenterVertically)
-            )
+            if (showForwardIcon) {
+                Icon(
+                    painter = painterResource(id = R.drawable.forward),
+                    contentDescription = null,
+                    tint = Color.White,
+                    modifier = Modifier
+                        .padding(start = 8.dp)
+                        .align(Alignment.CenterVertically)
+                )
+            }
         }
     }
 }
