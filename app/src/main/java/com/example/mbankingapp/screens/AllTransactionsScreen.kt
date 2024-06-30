@@ -24,7 +24,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mbankingapp.R
-import com.example.mbankingapp.rcViews.AccountRecyclerView
 import com.example.mbankingapp.rcViews.RecentTransactionsRecyclerView
 
 @Composable
@@ -38,7 +37,6 @@ fun AllTransactionsScreen() {
         horizontalAlignment = Alignment.Start
     ) {
         Spacer(modifier = Modifier.height(16.dp))
-
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.fillMaxWidth()
@@ -50,9 +48,7 @@ fun AllTransactionsScreen() {
                     .size(24.dp)
                     .padding(top = 6.dp)
             )
-
             Spacer(modifier = Modifier.width(16.dp))
-
             Text(
                 text = "All transactions",
                 color = Color.White,
@@ -60,9 +56,7 @@ fun AllTransactionsScreen() {
                 textAlign = TextAlign.Center,
                 modifier = Modifier.weight(1f)
             )
-
             Spacer(modifier = Modifier.width(16.dp))
-
             Image(
                 painter = painterResource(id = R.drawable.filter_icon),
                 contentDescription = "Filter",
@@ -71,9 +65,7 @@ fun AllTransactionsScreen() {
                     .padding(top = 6.dp)
             )
         }
-
         Spacer(modifier = Modifier.height(20.dp))
-
         Card(
             shape = MaterialTheme.shapes.medium,
             modifier = Modifier
