@@ -103,15 +103,15 @@ fun AddTransactionScreen() {
         ) {
             TitleText("Transaction", Modifier.layoutId(Transaction))
             RegularText("Transaction was applied in", Modifier.layoutId(TrApplied))
-            EditableField("", Modifier.layoutId(TrApllEditText))
+            EditableField("", false, Modifier.layoutId(TrApllEditText) )
             RegularText("Transaction number", Modifier.layoutId(TrNumber))
-            EditableField("", Modifier.layoutId(TrNumberEditText))
+            EditableField("",false, Modifier.layoutId(TrNumberEditText))
             RegularText("Date", Modifier.layoutId(TrDate))
-            EditableField("", Modifier.layoutId(DateEditText))
+            EditableField("",false, Modifier.layoutId(DateEditText))
             RegularText("Transaction status", Modifier.layoutId(TrStatus))
-            EditableField("", Modifier.layoutId(TrStatusEditText))
+            EditableField("",false, Modifier.layoutId(TrStatusEditText))
             RegularText("Amount", Modifier.layoutId(Amount))
-            EditableField("", Modifier.layoutId(AmountEditText))
+            EditableField("",false, Modifier.layoutId(AmountEditText))
             CustomButton("Okay", Modifier.layoutId(ButtonOkay))
         }
     }
